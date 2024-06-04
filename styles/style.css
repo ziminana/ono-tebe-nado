@@ -8,8 +8,7 @@
 
 .header {
   padding: 92px 50px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  display: flex;
   align-items: center;
   font-size: 18px;
   line-height: normal;
@@ -43,7 +42,8 @@
 
 .header__logo {
   width: 140px;
-  margin: auto;
+  margin-left: 36px;
+  margin-right: 184px;
 }
 
 .header__logo-image {
@@ -86,6 +86,8 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+  margin-bottom: 0;
+  gap: 8;
 }
 
 .letter-spacing-extended {
@@ -103,7 +105,6 @@
 
 .aligned-text_right {
   text-align: right;
-  margin-bottom: 0;
 }
 
 .letter-small-spacing-extended {
@@ -134,6 +135,7 @@
 }
 
 .bet-button {
+  font-family: inherit;
   padding: 12px 32px;
   width: 257px;
   height: 52px;
@@ -166,15 +168,17 @@
 }
 
 .lots__card-list {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   padding-top: 27px;
   list-style: none;
 }
 
 .lots__card-list-item {
-  width: 430px;
-  min-height: 450px;
+  width: 334px;
+  height: 563px;
   flex-grow: 1;
 }
 
@@ -215,20 +219,21 @@
   text-transform: uppercase;
   color: #fff;
   z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline;
 }
 
 .card__text {
   color: #fff;
   line-height: 120%;
   z-index: 2;
-  display: inline-block;
-  text-decoration: none;
 }
 
 .lots__look-more-link {
   margin-left: 40px;
   padding-top: 30px;
-  display: inline-block;
+  display: flex;
 }
 
 .lots__look-more-link:hover {
@@ -282,6 +287,7 @@
 
 .about__text_block {
   row-gap: 25px;
+  width: 693px;
   display: flex;
   flex-direction: column;
 }
